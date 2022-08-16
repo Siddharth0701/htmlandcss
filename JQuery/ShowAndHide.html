@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+    <script>
+    $("document").ready(function(){
+        $("#show").on("click",function(){
+            $("#box").show();
+        })
+        $("#hide").on("click",function(){
+            $("#box").hide();
+        })
+    });
+</script>
+<script>
+
+</script>
+<style>
+    #box{
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <a id="show" href="#"> Click to show</a><br>
+    <a  id="hide" href="#"> Click to show</a>
+    
+<div id="box">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam perferendis sunt at nobis suscipit vel eum recusandae quibusdam, autem doloribus tenetur eligendi officiis voluptatibus mollitia! Sit eum temporibus aspernatur rerum!</p>
+</div>
+
+</body>
+</html>
