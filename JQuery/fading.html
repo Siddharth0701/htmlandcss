@@ -9,11 +9,16 @@
     <!-- <script src="./js/script.js"></script> -->
     <script>
     $("document").ready(function(){
-        $("#show").on("click",function(){
-            $("#box").show();
+        $("#fade-in").on("click",function(){
+            $("#box").fadeIn(4000,function(){
+                alert("I am done")
+            });
         })
-        $("#hide").on("click",function(){
-            $("#box").hide();
+        $("#fade-out").on("click",function(){
+            $("#box").fadeOut("slow",function(){
+                alert("fade out")
+
+            });
         })
     });
 </script>
@@ -27,8 +32,8 @@
 </style>
 </head>
 <body>
-    <a id="show" href="#"> Click to show</a><br>
-    <a  id="hide" href="#"> Click to hide</a>
+    <a id="fade-in" href="#"> Click to show</a><br>
+    <a  id="fade-out" href="#"> Click to hide</a>
     
 <div id="box">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam perferendis sunt at nobis suscipit vel eum recusandae quibusdam, autem doloribus tenetur eligendi officiis voluptatibus mollitia! Sit eum temporibus aspernatur rerum!</p>
